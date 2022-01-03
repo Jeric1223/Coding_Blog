@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
 import Main from "../components/page/mainPage/index";
-/* import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link"; */
+import Jumbotron from "../components/common/jumbotron/index";
 
 const Home: NextPage = () => {
-  return <Main />;
+  return (
+    <>
+      <Jumbotron />
+      <Main />
+    </>
+  );
 };
 
 export default Home;
