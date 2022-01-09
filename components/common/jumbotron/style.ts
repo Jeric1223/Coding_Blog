@@ -9,6 +9,7 @@ export const JumbotronNav = styled.nav`
   background: url("/jumbotron.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 3rem;
 `;
 
 export const JumbotronTitle = styled.div`
