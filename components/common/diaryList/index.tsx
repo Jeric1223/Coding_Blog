@@ -6,18 +6,20 @@ interface Props {}
 
 const DiaryList: FC<Props> = () => {
   return (
-    <>
-      <S.MainSection>
-        <S.WriteArticle>
-          <S.ListHeader>
-            <h3>일지</h3>
-            <Link href="#">
-              <button>작성</button>
-            </Link>
-          </S.ListHeader>
-        </S.WriteArticle>
-      </S.MainSection>
-    </>
+    <S.MainSection>
+      <S.WriteArticle>
+        <S.ListHeader>
+          <h3>일지</h3>
+          <Link href="#">
+            <button>작성</button>
+          </Link>
+        </S.ListHeader>
+        <S.ListArticle>
+          <S.ListItem />
+          <S.ListItem />
+        </S.ListArticle>
+      </S.WriteArticle>
+    </S.MainSection>
   );
 };
 
