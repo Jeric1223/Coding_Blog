@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { FC, useEffect, useState } from "react";
 import * as S from "./style";
+import ListItem from "./ListItem";
 
 interface Props {}
 
@@ -15,8 +16,7 @@ const DiaryList: FC<Props> = () => {
           </Link>
         </S.ListHeader>
         <S.ListArticle>
-          <S.ListItem />
-          <S.ListItem />
+          <ListItem />
         </S.ListArticle>
       </S.WriteArticle>
     </S.MainSection>

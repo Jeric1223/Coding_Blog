@@ -39,6 +39,7 @@ export const ListArticle = styled.article`
   }
 `;
 
+
 export const ListItem = styled.div`
   width: 100%;
   height: 183px;
