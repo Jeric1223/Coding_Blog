@@ -48,3 +48,7 @@ export const ListItem = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   background-color: black;
 `;
+
+export const ListItemContent = styled.div`
+
+`
