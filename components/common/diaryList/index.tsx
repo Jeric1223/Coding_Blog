@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { FC, useEffect, useState } from "react";
+import axios from "axios";
 import * as S from "./style";
 import ListItem from "./ListItem";
 
