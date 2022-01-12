@@ -34,21 +34,57 @@ export const ListHeader = styled.header`
 export const ListArticle = styled.article`
   width: 100%;
   height: auto;
-  & div:nth-of-type(1) {
-    margin-top: 23px;
-  }
 `;
-
 
 export const ListItem = styled.div`
   width: 100%;
-  height: 183px;
-  padding: 0 0 30px 0;
+  height: 150px;
+  padding: 0 10px 30px 10px;
   margin: 0 0 30px 0;
+  &:nth-of-type(1) {
+    margin-top: 23px;
+  }
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  background-color: black;
+  .field {
+    font-family: "Poppins", "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    color: rgb(103, 179, 147);
+    font-size: 16px;
+  }
 `;
 
 export const ListItemContent = styled.div`
-
-`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  & .listItemTitleDiv {
+    h1 {
+      color: #101010;
+      font-size: 2.1rem;
+      font-weight: bold;
+      font-family: "Poppins", "Noto Sans KR", sans-serif;
+    }
+    p {
+      font-family: "Poppins", "Noto Sans KR", sans-serif;
+      color: #808080;
+      font-size: 18px;
+    }
+  }
+  & .listItemDateDiv {
+    align-items: flex-end;
+    span {
+      font-family: "Poppins", "Noto Sans KR", sans-serif;
+      color: #808080;
+      font-size: 14px;
+    }
+    span:nth-of-type(1) {
+      font-weight: bold;
+      font-size: 18px !important;
+    }
+  }
+`;
