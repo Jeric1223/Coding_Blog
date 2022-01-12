@@ -42,7 +42,7 @@ export const ListItem = styled.div`
   padding: 0 10px 30px 10px;
   margin: 0 0 30px 0;
   &:nth-of-type(1) {
-    margin-top: 23px;
+    margin-top: 45px;
   }
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   .field {
