@@ -37,6 +37,7 @@ export const ListArticle = styled.article`
 `;
 
 export const ListItem = styled.div`
+  cursor: pointer;
   width: 100%;
   height: 150px;
   padding: 0 10px 30px 10px;
@@ -44,7 +45,7 @@ export const ListItem = styled.div`
   &:nth-of-type(1) {
     margin-top: 45px;
   }
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   .field {
     font-family: "Poppins", "Noto Sans KR", sans-serif;
     font-weight: bold;
