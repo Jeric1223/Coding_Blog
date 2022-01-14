@@ -2,8 +2,8 @@ import React, { FC } from "react";
 
 interface Props {}
 
-const index: FC<Props> = () => {
-  return <div></div>;
+const PostPage: FC<Props> = () => {
+  return <div>POST Page</div>;
 };
 
-export default index;
+export default PostPage;
