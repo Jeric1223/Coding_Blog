@@ -12,7 +12,7 @@ const DiaryList: FC<Props> = () => {
       <S.WriteArticle>
         <S.ListHeader>
           <h3>일지</h3>
-          <Link href="#">
+          <Link href="/post">
             <button>작성</button>
           </Link>
         </S.ListHeader>
