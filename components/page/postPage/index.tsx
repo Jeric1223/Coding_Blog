@@ -1,5 +1,6 @@
 import React, { FC, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import Header from "../../common/header/index";
 
 const PostEditor = dynamic(() => import("../../../template/PostEditor"), {
   ssr: false,
@@ -21,6 +22,7 @@ const PostPage: FC<Props> = () => {
   };
   return (
     <>
+      <Header />
       <PostEditor editorRef={editorRef} onChangeEvent={onChangeEvent} />
     </>
   );
