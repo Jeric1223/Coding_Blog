@@ -19,7 +19,7 @@ export default function PostEditor(props: any) {
       ref={props.editorRef}
       onChange={props.onChangeEvent}
       previewStyle="vertical"
-      height="90vh"
+      height="80vh"
       plugins={[colorSyntax, [codeSyntaxHighlight, { highlighter: Prism }]]}
     />
   );

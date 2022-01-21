@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import Jumbotron from "../../common/jumbotron";
 import DiaryList from "../../common/diaryList";
 
