@@ -1,6 +1,7 @@
 import React, { FC, useRef, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Header from "../../common/header/index";
+import ButtonWrapper from "../../common/post-button/ButtonWrapper";
 
 const PostEditor = dynamic(() => import("../../../template/PostEditor"), {
   ssr: false,
@@ -24,11 +25,12 @@ const PostPage: FC<Props> = () => {
   const onChangeEvent = () => {
     setEditorMarkDown(editorRef.current.getInstance().getMarkdown());
   };
-  
+
   return (
     <>
       <Header />
       <PostEditor editorRef={editorRef} onChangeEvent={onChangeEvent} />
+      <ButtonWrapper />
     </>
   );
 };
