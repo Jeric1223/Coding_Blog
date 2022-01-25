@@ -1,14 +1,17 @@
 import React, { FC } from "react";
 import * as S from "./style";
 
-interface Props {}
+interface Props {
+  editorMarkDown: string;
+}
 
-const ButtonWrapper: FC<Props> = () => {
+const ButtonWrapper: FC<Props> = (props) => {
+  const { editorMarkDown } = props;
   return (
     <S.PostButtonWrapper>
       <button
         onClick={() => {
-          console.log(`Click!`);
+          console.log(editorMarkDown);
         }}
       >
         작성완료

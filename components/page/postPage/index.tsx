@@ -30,7 +30,7 @@ const PostPage: FC<Props> = () => {
     <>
       <Header />
       <PostEditor editorRef={editorRef} onChangeEvent={onChangeEvent} />
-      <ButtonWrapper />
+      <ButtonWrapper editorMarkDown={editorMarkDown} />
     </>
   );
 };
