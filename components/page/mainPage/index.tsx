@@ -5,7 +5,7 @@ import DiaryList from "../../common/diaryList";
 
 interface Props {}
 
-const index: FC<Props> = () => {
+const MainPage: FC<Props> = () => {
   return (
     <>
       <Jumbotron />
@@ -14,4 +14,4 @@ const index: FC<Props> = () => {
   );
 };
 
-export default index;
+export default MainPage;
