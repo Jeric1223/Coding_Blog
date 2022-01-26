@@ -1,6 +1,6 @@
 # 코딩일지 사이트
 
-NEXT.js, emotion/style, toast/ui, styled-components, 
+NEXT.js, emotion/style, toast/ui, styled-components, Jotai
 
 배포 예정
 
