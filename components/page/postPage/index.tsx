@@ -8,10 +8,6 @@ const PostEditor = dynamic(() => import("../../../template/PostEditor"), {
   ssr: false,
 });
 
-const PostViewer = dynamic(() => import("../../../template/PostViewer"), {
-  ssr: false,
-});
-
 
 interface Props {}
 
