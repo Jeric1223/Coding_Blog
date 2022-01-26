@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import Header from "../../common/header/index";
 import ButtonWrapper from "../../common/post-button/ButtonWrapper";
 
+
 const PostEditor = dynamic(() => import("../../../template/PostEditor"), {
   ssr: false,
 });
@@ -11,10 +12,12 @@ const PostViewer = dynamic(() => import("../../../template/PostViewer"), {
   ssr: false,
 });
 
+
 interface Props {}
 
 const PostPage: FC<Props> = () => {
   const [editorMarkDown, setEditorMarkDown] = useState("");
+
 
   useEffect(() => {
     console.log(editorMarkDown);
