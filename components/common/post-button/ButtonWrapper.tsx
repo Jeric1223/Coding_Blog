@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import * as S from "./style";
 import { atom, useAtom } from 'jotai';
 import { atomWithStorage } from "jotai/utils"
@@ -7,19 +7,20 @@ interface Props {
   editorMarkDown: string;
 }
 
-const darkModeAtom = atomWithStorage('isDone', false)
+const darkModeAtom = atomWithStorage('postItem', "[]")
 
 const ButtonWrapper: FC<Props> = (props) => {
   const { editorMarkDown } = props;
-  const [darkMode, setDarkMode] = useAtom(darkModeAtom)
+
+  const [postItem, setPostItem] = useAtom(darkModeAtom)
 
   return (
     <S.PostButtonWrapper>
       <button
         onClick={() => {
-          console.log(editorMarkDown)
-          setDarkMode(!darkMode)
-          console.log(darkMode)
+          let newArray = JSON.parse(postItem)
+          newArray.push(editorMarkDown)
+          setPostItem(JSON.stringify(newArray))
         }}
       >
         작성완료
