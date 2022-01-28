@@ -15,7 +15,6 @@ import "@toast-ui/editor-plugin-color-syntax/dist/toastui-editor-plugin-color-sy
 import colorSyntax from "@toast-ui/editor-plugin-color-syntax";
 
 export default function PostEditor(props: any) {
-  console.log(props);
   return (
     <Editor
       ref={props.editorRef}
