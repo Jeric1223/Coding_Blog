@@ -43,7 +43,9 @@ const PostPage: FC<Props> = () => {
     <>
       <Header />
       <PostTitleWrapper onChangeTitle={onChangeTitle}  />
-      <PostEditor editorRef={editorRef} onChangeEvent={onChangeContent} />
+      <div style={{width:'93vw', margin:'0 auto'}}>
+        <PostEditor editorRef={editorRef} onChangeEvent={onChangeContent} />
+      </div>
       <ButtonWrapper editorMarkDown={editorMarkDown} postTitleAndSubtitle={postTitleAndSubtitle} />
     </>
   );
