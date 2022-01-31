@@ -12,8 +12,7 @@ export default function PostViewer(props: any) {
   return (
     <Viewer
       initialValue={props.editorMarkDown}
-      plugins={[[codeSyntaxHighlight, { highlighter: Prism }]]}
-      
+      plugins={[[codeSyntaxHighlight, { highlighter: Prism }]]}  
     />
   );
 }
