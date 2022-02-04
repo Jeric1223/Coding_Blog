@@ -12,7 +12,6 @@ interface Props {}
 const DetailViewPage: FC<Props> = (props) => {
   return (
     <>
-    
       <Header />
       <PostViewer editorMarkDown={mdData} />
     </>
